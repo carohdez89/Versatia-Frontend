@@ -1,4 +1,5 @@
 @import "normalize.styl"
+@import "fonts.styl"
 
 gris_oscuro = #333333
 gris_claro = #818181
@@ -20,10 +21,11 @@ body
 figure 
 	margin 0
 .button-menu
+	color gris_oscuro
+	left .5em
+	margin-top -10px
 	position absolute
 	top 50%
-	margin-top -10px
-	left .5em
 .border-bottom
 	border-bottom 1px solid gris_claro
 
@@ -35,6 +37,10 @@ figure
 	color gris_oscuro
 .author
 	color gris_claro
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
 .header
 	height 3.5em
 /*	a
@@ -65,5 +71,8 @@ p
 	margin .5em 0
 /*	margin top right bottom left
 	margin top/bottom right/left*/
+.playing
+	&.small
+		width 20em
 
 
