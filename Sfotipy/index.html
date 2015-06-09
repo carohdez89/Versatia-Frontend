@@ -2,21 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<title>Top Hits</title>
 </head>
 <body>
 <header class="header relative border-bottom">
-	
+	<div class="logo">
+		<div class="wrap center-block">
+			<figure class="image isotipo left">
+			<img src="img/logo.png" alt="Sfotipy"/>
+			</figure>		
+			<div class="user right">
+				<span class="right username">UserName</span>
+				<figure class="avatar round left">
+					<img src="img/avatares/avatar.jpg" width="38" height="38" alt="Holi">
+				</figure>
+			</div>
+			<div class="search right">
+				<form class="relative" action="">
+					<span class="icon-buscar search-icon"></span>
+					<input class="input" type="text" placeholder="Digite usuario">
+					<span class="close-icon">X</span>
+				</form>
+			</div>
+		</div>
+		
+	</div>	
 	<a href="" class="button-menu icon-menu"></a>
 	<nav class="menu">
-		<ul class="list">
+		<ul class="list center-block wrap">
 			<li class="item"><a href="">Top Hits</a></li>
-			<li class="item"><a href="">Top Hits</a></li>
-			<li class="item"><a href="">Top Hits</a></li>
-			<li class="item"><a href="">Top Hits</a></li>
-			<li class="item"><a href="">Top Hits</a></li>
+			<li class="item"><a href="">Profile</a></li>
+			<li class="item"><a href="">Settings</a></li>
+			<li class="item"><a href="">Playlist</a></li>
 			<li class="item"><a href="">Top Hits</a></li>
 		</ul>
 
@@ -28,16 +48,18 @@
 			</span>
 		</div>
 </header>	
-<section class="playing small center-block">
-	<figure class="image">
+<section class="playing small medium center-block">
+	<figure class="image relative">
 		<img src="img/songs/happy640.jpg" width="320" height="320" alt="Happy Pharrel Williams">
-		<div class="actions">
+		<div class="actions padding right-text">
 			<a href="" class="action icon-add"></a>
 			<a href="" class="action icon-love"></a>
 			<a href="" class="action icon-compartir"></a>
 		</div>
 	</figure>
-	<div class="progress">
+	<div class="padding">
+		<div class="progress">
+		<span class="min">0:45</span>
 		<div class="total">
 			<div class="state">
 				<div class="circle">
@@ -45,8 +67,9 @@
 				</div>
 			</div>
 		</div>
+		<span class="max">4:10</span>
 	</div>
-	<div class="description center-text">
+	<div class="description center-text border-bottom">
 		<p class="name">
 			Happy
 		</p>
@@ -54,14 +77,16 @@
 			Pharrel Williams
 		</p>
 	</div>
-	<div class="play center-text">
-		<a href="" class="action icon-retroceder"></a>
-		<a href="" class="action icon-play"></a>
-		<a href="" class="action icon-adelantar"></a>
-		<a href="" class="action icon-siguiente"></a>
-		<a href="" class="action icon-aleatorio"></a>
-		<a href="" class="action icon-volumen"></a>
+	<div class="play center-text padding-tb">
+		<a href="" class="action gray icon-retroceder"></a>
+		<a href="" class="action gray icon-play"></a>
+		<a href="" class="action gray icon-adelantar"></a>
+		<a href="" class="action gray icon-siguiente"></a>
+		<a href="" class="action gray icon-aleatorio"></a>
+		<a href="" class="action gray icon-volumen"></a>
 	</div>
+	</div>
+	
 </section>
 <section class="container">
 	<article class="song">
@@ -134,7 +159,8 @@
 		<p class="author">Pharrel Williams</p>
 
 		
-	</article><article class="song">
+	</article>
+	<article class="song">
 		<figure class="image">
 			<img src="img/songs/happy.jpg" width="128" height="128"alt="Happy Pharrel Williams">
 		</figure>
@@ -152,6 +178,43 @@
 
 		
 	</article>
+	<article class="song">
+		<figure class="image">
+			<img src="img/songs/happy.jpg" width="128" height="128"alt="Happy Pharrel Williams">
+		</figure>
+		<p class="name">Happy</p>
+		<p class="author">Pharrel Williams</p>
+
+		
+	</article>
+	<article class="song">
+		<figure class="image">
+			<img src="img/songs/happy.jpg" width="128" height="128"alt="Happy Pharrel Williams">
+		</figure>
+		<p class="name">Happy</p>
+		<p class="author">Pharrel Williams</p>
+
+		
+	</article>
+	<article class="song">
+		<figure class="image">
+			<img src="img/songs/happy.jpg" width="128" height="128"alt="Happy Pharrel Williams">
+		</figure>
+		<p class="name">Happy</p>
+		<p class="author">Pharrel Williams</p>
+
+		
+	</article>
+	<article class="song">
+		<figure class="image">
+			<img src="img/songs/happy.jpg" width="128" height="128"alt="Happy Pharrel Williams">
+		</figure>
+		<p class="name">Happy</p>
+		<p class="author">Pharrel Williams</p>
+
+		
+	</article>
+
 </section>
 <strong>Mensaje de la rama de Jorge</strong>
 </body>
