@@ -1,5 +1,15 @@
+@import "nib"
 @import "normalize.styl"
 @import "fonts.styl"
+
+vendor-prefixes= webkit o ms moz official
+//Mixin
+// animacion(parametro)
+// 	-webkit-animation parametro
+// 	-moz-animation parametro
+// 	-o-animation parametro
+// 	-ms-animation parametro
+// 	animation parametro
 
 gris_oscuro = #333333
 gris_claro = #818181
@@ -103,6 +113,13 @@ ul
 		width 30%
 		border-radius 5px
 		position relative
+		// -webkit-animation 1s state
+		// -o-animation 1s state
+		// -moz-animation 1s state infinite
+		// -ms-animation 1s state infinite
+		animation 100s state linear
+		// animacion(1s state infinite)
+		
 	.circle
 		background gris_oscuro
 		border-radius 50%
@@ -111,6 +128,20 @@ ul
 		position absolute
 		right 0
 		top -2px
+		animation 1s circle infinite
+		// animacion(1s circle infinite)
+@keyframes state
+	0%
+		width 0%
+	100%
+		width 100%
+@keyframes circle
+	0%
+		transform scale(1)
+	100%
+		transform scale(1.5)
+		opacity 0
+
 .header
 	height 3.5em
 /*	a
@@ -168,7 +199,8 @@ p
 .playlist
 	display none
 	
-
+	
+//media Queries
 @media screen and (min-width: 480px)
 	body
 		background white
