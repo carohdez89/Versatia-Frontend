@@ -142,6 +142,7 @@ p
 /*	margin top right bottom left
 	margin top/bottom right/left*/
 .playing
+	margin 0 auto
 	// display none
 	&.small
 		width 20em
@@ -164,6 +165,9 @@ p
 	font-size 1.2em
 .logo
 	display none
+.playlist
+	display none
+	
 
 @media screen and (min-width: 480px)
 	body
@@ -183,10 +187,18 @@ p
 		background gris_mas_claro
 	.button-menu
 		display none
+	.playing
+		padding-top 1.3em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden
+			
 	.menu
 		background gris_mas_claro
 		display block
 		overflow hidden
+		border-top 1px solid gris_claro
 		.item
 			float left
 			list-style none
@@ -200,8 +212,28 @@ p
 				border-top 5px solid transparent
 				&:hover
 					border-top 5px solid gris_claro
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+	.playlist
+		display block
+		width 22em
+		// background red
+		padding 0 2em
+		border-left 1px solid gris_claro
+		.list
+			// background yellow
+			list-style none			
+		.item
+			padding 1em 0em	
+			color gris_oscuro
+		.action
+			font-size .8em		
 	.header
 		height auto
+		border none
 		.title
 			display none
 	.isotipo
