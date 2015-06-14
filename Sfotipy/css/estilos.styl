@@ -3,6 +3,7 @@
 
 gris_oscuro = #333333
 gris_claro = #818181
+rojo= #BD255B
 
 /*h1
 	color red
@@ -20,6 +21,9 @@ body
 
 figure 
 	margin 0
+img
+	vertical-align top 
+	// Esto es para alinear imagenes de modo vertical
 .button-menu
 	color gris_oscuro
 	left .5em
@@ -33,6 +37,21 @@ figure
 	padding 1.4rem
 	font-size 0
 	text-align center
+.action
+	color white 
+	font-size 1.2em
+	margin-right .5em
+	&:last-child
+		margin 0
+	&.gray
+		color gris_claro
+.actions 
+	position absolute
+	bottom 0
+	right 0
+	left 0
+	background rgba(black,.3)
+	// Negro al 30% -> Opacidad
 .name
 	color gris_oscuro
 .author
@@ -52,8 +71,51 @@ figure
 		line-height 3.5em
 .menu
 	display none
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.progress
+	margin 1em 0
+	position relative
+	// top y bottom
+	.min
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+		
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px
+		width 75%	
+		margin 0 auto 
+		//centrado	
+	.state
+		height 5px
+		border-radius 5px
+		background rojo
+		width 30%
+		position relative
+		// 30% de reproduccion de la cancion
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		width 10px
+		position absolute
+		right 0
+		top -2px
+.right-text
+	text-align right
 .relative
 	position relative
+
 .song
 	display inline-block
 	font-size 1rem
@@ -74,5 +136,6 @@ p
 .playing
 	&.small
 		width 20em
+
 
 
