@@ -4,6 +4,7 @@
 gris_oscuro = #333333
 gris_claro = #818181
 rojo= #BD255B
+gris_mas_lindo=#D0CCCC
 
 /*h1
 	color red
@@ -23,7 +24,11 @@ figure
 	margin 0
 img
 	vertical-align top 
-	// Esto es para alinear imagenes de modo vertical
+	// Esto es para alinear imagenes de modo vertical-align
+ul
+	margin 0
+	padding 0	
+
 .button-menu
 	color gris_oscuro
 	left .5em
@@ -60,6 +65,12 @@ img
 	margin 0 auto
 .center-text
 	text-align center
+.close-icon
+	position absolute
+	top .5em
+	color gris_claro
+	right .5em
+	font-size 1.2em
 .header
 	height 3.5em
 /*	a
@@ -69,6 +80,16 @@ img
 		text-align center
 		margin 0
 		line-height 3.5em
+.left
+	float left
+.right
+	float right
+.input
+	border 1px solid gris_claro
+	height 2.5em
+	border-radius 5px
+	padding 0 1em 0 2em	
+	
 .menu
 	display none
 .padding
@@ -116,6 +137,14 @@ img
 .relative
 	position relative
 
+.round
+	border-radius 50%
+	overflow hidden
+.search-icon
+	position absolute
+	left .5em
+	top .8em
+	color gris_claro
 .song
 	display inline-block
 	font-size 1rem
@@ -136,6 +165,77 @@ p
 .playing
 	&.small
 		width 20em
-
-
-
+.wrap
+	width 1000px
+// MEDIA QUERIES
+@media screen and (min-width:480px)
+	// body
+	// 	background red
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image	
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			width auto
+			
+@media screen and (min-width:1000px)
+	body
+		background gris_mas_lindo
+	.button-menu
+		display none
+	.header
+		height auto
+		.title
+			display none
+	// .image
+	// 	img
+	// 		width auto
+	.isotipo
+		width 122px
+	.logo
+		padding 1.3em 0
+		overflow hidden
+		background white
+	.menu
+		display block
+		background gris_mas_lindo
+		overflow hidden
+		.item
+			float left
+			list-style none
+			
+			a
+				color gris_oscuro
+				text-transform uppercase				
+				cursor pointer
+				padding 1em
+				display block
+				border-top 5px solid transparent
+				&:hover
+					border-top 5px solid gris_claro
+	.avatar
+		width 38px
+		height 38px
+.username
+	color gris_claro
+	position relative
+	top 9px
+	margin-left .5em
+	//pseudoelementos
+	&:after
+		content ""
+		border-left 7px solid transparent
+		border-top 9px solid gris_claro
+		border-right 7px solid transparent
+		display inline-block
+		margin-right .4em
+		
+	// &:before
+		//obligatorio poner content en vacio
+		
+	
+		
