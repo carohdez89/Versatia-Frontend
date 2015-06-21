@@ -1,5 +1,14 @@
 @import "normalize.styl"
 @import "fonts.styl"
+@import "nib"
+vendor-prefixes = webkit o ms moz official
+
+// animacion(parametro)
+// 	-webkit-animation parametro
+// 	-ms-animation parametro
+// 	-moz-animation parametro
+// 	-o-animation parametro
+// 	animation parametro
 
 gris_oscuro = #333333
 gris_claro = #818181
@@ -182,6 +191,7 @@ ul
 		background rojo
 		width 30%
 		position relative
+		animation 10s state infinite linear
 		// 30% de reproduccion de la cancion
 	.circle
 		background gris_oscuro
@@ -191,6 +201,19 @@ ul
 		position absolute
 		right 0
 		top -2px
+		animation 1s circle infinite
+@keyframes state
+	0% 
+		width 0
+		//margin
+	100%
+		width 100%
+@keyframes circle
+	0% 
+		transform scale(1) 
+	100%
+		transform scale(2)
+		opacity 0
 .right-text
 	text-align right
 .relative
